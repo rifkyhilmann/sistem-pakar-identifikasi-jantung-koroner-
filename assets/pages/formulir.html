@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Sistem Pakar</title>
+</head>
+<body>
+    <div class="data-container">
+        <div class="form-data">
+                    <div class="form-titles">
+                        <h1>SISTEM PAKAR DIAGNOSA PENYAKIT DIABETES MELITIUS</h1>
+                        <h2>HALAMAN KONSULTASI</h2>
+                        <p>Data Pasien</p>
+                    </div>
+                <div class="form-container">
+                    <div class="form">
+                        <p>NAMA PASIEN</p>
+                        <input type="text" class="input-name" id="input-nama">
+                    </div>
+                    <div class="form">
+                        <p>JENIS KELAMIN</p>
+                        <select name="" id="input-jk" class="select-jk">
+                            <option value="" disabled selected>Pilih Jenis Kelamin</option>
+                            <option value="Laki-Laki">Laki-Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <p>UMUR</p>
+                        <input type="number" class="input-umur" id="input-umur">
+                        <h5>Tahun</h5>
+                    </div>
+                    <div class="form">
+                        <p>ALAMAT</p>
+                        <textarea name="" id="input-alamat" class="textarea-alamat" ></textarea>
+                    </div>
+                    <div class="form">
+                        <p>BERAT/TINGGI BADAN</p>
+                        <input type="number" class="input-bb" id="input-bb">
+                        <h5>/KG</h5>
+                        <input type="number" class="input-bb" id="input-tb">
+                        <h5>/CM</h5>
+                    </div>
+                    <div class="form">
+                        <p>GOLONGAN DARAH</p>
+                        <select name="" id="input-darah" class="select-darah">
+                            <option value="" selected disabled>Pilih Golongan Darah</option>
+                            <option value="A">A</option>
+                            <option value="A+">A+</option>
+                            <option value="B">B</option>
+                            <option value="B+">B+</option>
+                            <option value="AB">AB</option>
+                            <option value="AB+">AB+</option>
+                            <option value="O">O</option>
+                        </select>
+                    </div>
+                    <div class="form-btn">
+                        <button class="btn-kirim" onclick="submitData()">Submit</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="diagnosa-container" id="diagnosa-container">
+        <div class="form-diagnosa">
+            
+                <div class="form-titles">
+                    <h1>SISTEM PAKAR DIAGNOSA PENYAKIT DIABETES MELITIUS</h1>
+                    <h2>HALAMAN KONSULTASI</h2>
+                    <p>Data Gejala</p>
+                </div>
+                <div class="form-tabel">
+                    <table border="1px">
+                        <tr>
+                            <th width="50%">Nama Gejala</th>
+                            <th>Range</th>
+                        </tr>
+                        <tr>
+                            <td>Autoimun</td>
+                            <td>
+                                <select name="" id="autoimun">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Banyak Minum (Polydipsia)</td>
+                            <td>
+                                <select name="" id="banyakMinum">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Banyak Kencing (Polyuria)</td>
+                            <td>
+                                <select name="" id="banyakKencing">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Banyak Makan (Polyphagia)</td>
+                            <td>
+                                <select name="" id="banyakMakan">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Faktor Genetik (Keturunan)</td>
+                            <td>
+                                <select name="" id="faktorGenetik">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Penglihatan Kabur</td>
+                            <td>
+                                <select name="" id="penglihatanKabur">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kesemutan</td>
+                            <td>
+                                <select name="" id="kesemutan">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Berat Badan Menurun</td>
+                            <td>
+                                <select name="" id="bbMenurun">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kadar Gula Tinggi</td>
+                            <td>
+                                <select name="" id="kadarGula">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tekanan Darah Tinggi (Hipertensi)</td>
+                            <td>
+                                <select name="" id="darahTinggi">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gula Darah Puasa Terganggu</td>
+                            <td>
+                                <select name="" id="gulaDarah">
+                                    <option value="" selected disabled>Pilih Range</option>
+                                    <option value="sangat">Sangat</option>
+                                    <option value="sedang">Sedang</option>
+                                    <option value="tidak">Tidak</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="form-btn">
+                        <button class="btn-kirim" onclick="submitDiagnosa()">Submit</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="hasil-container" id="hasil-container">
+        <div class="form-hasill">
+            <div class="form-titles">
+                <h1>SISTEM PAKAR DIAGNOSA PENYAKIT DIABETES MELITIUS</h1>
+                <h2>HALAMAN KONSULTASI</h2>
+                <p>Data Pasien, Gejala & Cara Mengatasi</p>
+            </div>
+            <div class="form-hasil-konsultasi">
+                <div class="hasil-pasien">
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Nama Pasien</h5>
+                            <input type="text" id="hasil-nama" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Jenis Kelamin</h5>
+                            <input type="text" id="hasil-jk" disabled>
+                        </div>
+                    </div>
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Umur</h5>
+                            <input type="text" id="hasil-umur" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Berat Badan</h5>
+                            <input type="text" id="hasil-bb" disabled>
+                        </div>
+                    </div>
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Golongan Darah</h5>
+                            <input type="text" id="hasil-darah" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Tinggi Badan</h5>
+                            <input type="text" id="hasil-tb" disabled>
+                        </div>
+                    </div>
+                    <div class="form-alamat">
+                        <div class="hasil">
+                            <h5>Alamat</h5>
+                            <textarea name="" id="hasil-alamat" class="hasil-alamat" disabled></textarea>
+                        </div>
+                        <div class="hasil">
+                           
+                        </div>
+                    </div>
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Autoimun</h5>
+                            <input type="text" id="hasil-gejala-autoimun" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Banyak Minum (Polydipsia)</h5>
+                            <input type="text" id="hasil-gejala-banyakMinum" disabled>
+                        </div>
+                    </div>
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Banyak Kencing (Polyuria)</h5>
+                            <input type="text" id="hasil-gejala-banyakKencing" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Banyak Makan (Polyphagia)</h5>
+                            <input type="text" id="hasil-gejala-banyakMakan" disabled>
+                        </div>
+                    </div>
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Faktor Genetik (Keturunan)</h5>
+                            <input type="text" id="hasil-gejala-faktorGenetik" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Penglihatan Kabur</h5>
+                            <input type="text" id="hasil-gejala-pengelihatanKabur" disabled>
+                        </div>
+                    </div>
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Kesemutan</h5>
+                            <input type="text" id="hasil-gejala-kesemutan" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Berat Badan Menurun</h5>
+                            <input type="text" id="hasil-gejala-BBmenurun" disabled>
+                        </div>
+                    </div>
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Kadar Gula Darah Tinggi</h5>
+                            <input type="text" id="hasil-gejala-kadarGula" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Tekanan Darah Tinggi (Hipertensi)</h5>
+                            <input type="text" id="hasil-gejala-darahTinggi" disabled>
+                        </div>
+                    </div>
+                    <div class="form-hasil">
+                        <div class="hasil">
+                            <h5>Gula Darah Puasa Terganggu</h5>
+                            <input type="text" id="hasil-gejala-gulaDarah" disabled>
+                        </div>
+                        <div class="hasil">
+                            <h5>Darah Tinggi</h5>
+                            <input type="text" id="hasil-gejala-darahTinggi" disabled>
+                        </div>
+                    </div>
+                    <div class="diagnosa-penyakit">
+                        <h3>Kemungkinan terbesar pasien menderita penyakit</h3>
+                        <div class="form-diagnosaa">
+                            <h5>Nama Penyakit</h5>
+                            <input type="text" id="hasil-nama-penyakit" class="input-nama-penyakit" disabled>
+                        </div>
+                        <div class="form-diagnosaa">
+                            <h5>Persentase</h5>
+                            <input type="text" id="hasil-persentase" class="input-Persentase" disabled>
+                        </div>
+                        <div class="form-diagnosaa">
+                            <h5>Definisi</h5>
+                            <textarea name="" id="hasil-definisi" class="input-diagnosa"  disabled></textarea>
+                        </div>
+                        <div class="form-diagnosaa">
+                            <h5>Solusi</h5>
+                            <textarea name="" id="hasil-solusi" class="input-solusi"  disabled></textarea>
+                        </div>
+                    </div>
+                    <div class="btn-diagnosa">
+                        <button class="btn-kembali"><a href="../../index.html">Kembali</a></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../script/script.js"></script>
+   
+</body>
+</html>

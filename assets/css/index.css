@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+.nav {
+    display: flex;
+    width: 98%;
+    justify-content: end;
+    align-items: center;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+}
+.nav a:hover {
+    background-color: rgba(255, 246, 246, 0.363);
+}
+.nav-title {
+    position: absolute;
+    color: white;
+    left: 30px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+.container-title {
+    height: 80vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-title h1 {
+    font-family: monospace;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.container-title p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5px;
+}
+.container-images {
+    height: 80vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-klik {
+    height: 30px;
+    border: none;
+    margin-top: 40px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+.container-images img {
+    height: 80%;
+    width: 80%;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 200px;
+}
+.content-title {
+    width: 70vh;
+}
+.content-title p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.content-title h1 {
+    font-size: 50px;
+    font-family: monospace;
+    color: purple;
+    margin-bottom: 20px;
+}
+.content-images {
+    height: 80vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-images  img {
+    height: 60%;
+    width: 80%;
+}

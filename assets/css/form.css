@@ -1,0 +1,296 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+.data-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+}
+.form-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    background-color: white;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 10px;
+}
+.form-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+}
+.form-titles h1 {
+    font-family: monospace;
+    font-size: 30px;
+    color: purple;
+}
+.form-titles h2 {
+    margin: 0px;
+    color: purple;
+    font-family: monospace;
+}
+.form-titles p {
+    font-size: 25px;
+    margin: 30px 0px 24px 0px;
+    width: 100%;
+    background-color: purple;
+    color: white;
+    height: 35px;
+    text-align: center;
+    font-family: Impact;
+}
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form p {
+    width: 250px;
+    margin-left: 100px;
+    font-size: 18px;
+    font-family: monospace;
+}
+.input-name {
+    width: 40%;
+    height: 20px;
+}
+.input-umur {
+    width: 20%;
+    height: 20px;
+}
+.input-alamat {
+    width: 40%;
+    height: 100px;
+}
+.textarea-alamat {
+    height: 80px;
+    width: 40%;
+}
+
+.input-bb {
+    width: 10%;
+    height: 20px;
+}
+
+.select-darah {
+    width: 40%;
+    height: 20px;
+}
+.select-jk {
+    width: 40%;
+    height: 20px;
+}
+.form-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn-kirim {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: rgb(1, 132, 255);
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+}
+.btn-kirim:hover {
+    background-color: rgba(0, 0, 0, 0.699);
+    cursor: pointer;
+}
+
+
+.diagnosa-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.form-diagnosa {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    background-color: white;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 10px;
+}
+.form-tabel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+table {
+    border-collapse: collapse;
+}
+table tr {
+    font-family: var(--monserat);
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  th, td {
+    padding: 8px;
+}
+table tr td select, .form select {
+
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #080808;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+.hasil-container {
+    height: auto;
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+.form-hasill {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    box-shadow: 8px 8px 8px black;
+    border-radius: 10px;
+}
+.form-hasil-konsultasi {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.form-hasil {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1px;
+    height: 40px;
+    
+}
+.hasil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-hasil input {
+    height: 20px;
+}
+.form-hasil h5 {
+    width: 150px;
+}
+.form-alamat {
+    display: flex;
+    margin-left: 74px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-alamat h5 {
+    width: 150px;
+}
+.form-alamat input {
+    height: 50px;
+    width: 250px; 
+}
+.hasil-gejala {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: monospace;
+    color: purple;
+}
+
+
+
+.diagnosa-penyakit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-top: 1px solid purple;
+    border-bottom: 1px solid purple;
+}
+.form-diagnosaa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;   
+}
+.form-diagnosaa h5 {
+    width: 150px;
+}
+.input-diagnosa, .input-solusi, .hasil-alamat{
+    height: 80px;
+    width: 450px;
+   
+}
+.input-nama-penyakit, .input-Persentase {
+    height: 30px;
+    width: 200px;
+}
+.btn-diagnosa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    gap: 100px;
+}
+.btn-cetak {
+    height: 40px;
+    width: 100px;
+    background-color: rgb(1, 132, 255);
+    border: none;
+}
+.btn-kembali {
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: tomato;
+}
+.btn-cetak a , .btn-kembali a{
+    color: white;
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+.btn-cetak:hover, .btn-kembali:hover {
+    background-color: rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+}
